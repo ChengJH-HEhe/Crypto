@@ -3,10 +3,12 @@
 using namespace std;
 
 /*
+一些约定：加密前的信息称为明文，加密后的信息称为密文
+
 HINT0: 本题目是一个简单的流密码破解题目，题意在requirement.md中已说明，且加密方式是异或运算
 HINT1: 假设A，B两明文key加密后密文分别是 EA = A^key, EB = B^key, 那么 EA^EB = A^B.
 HINT2: 空格 ASCII = 0x20, A~Z ASCII = 0x41~0x5A, a~z ASCII = 0x61~0x7A
-HINT3: 空格^大写字母 = ?, 空格^小写字母 = ?
+HINT3: 空格^a = A, 空格^A = a; 那么如果 两个
 HINT4: 空格^key^空格 = ?
 HINT4: 通过HINT3，可以得到key的一部分，然后通过HINT1，可以得到剩下的key
 HINT5: 解密后的文本可能需要微调，你只需要获取密文的大致意思即可
