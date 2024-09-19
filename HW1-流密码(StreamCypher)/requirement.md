@@ -7,9 +7,12 @@
 解密时，**明文** $$msg = CT \oplus key$$.
 
 成立条件是 $\oplus$ 运算满足 
-$$ a\oplus b = b \oplus a $$ 
+$$ a\oplus b = b \oplus a $$
+
 $$ a \oplus a = 0$$
+
 $$0 \oplus a = a $$
+
 通常我们取 $\oplus$ 为 $xor$(异或) 运算. 
 
 ### 问题描述

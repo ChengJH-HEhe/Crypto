@@ -1,17 +1,17 @@
-#include <bits/stdc++.h>
+#include <cstring>
+#include <string>
+
 
 using namespace std;
 
 /*
 一些约定：加密前的信息称为明文，加密后的信息称为密文
 
-HINT0: 本题目是一个简单的流密码破解题目，题意在requirement.md中已说明，且加密方式是异或运算
-HINT1: 假设A，B两明文key加密后密文分别是 EA = A^key, EB = B^key, 那么 EA^EB = A^B.
-HINT2: 空格 ASCII = 0x20, A~Z ASCII = 0x41~0x5A, a~z ASCII = 0x61~0x7A
-HINT3: 空格^a = A, 空格^A = a; 那么如果 两个
-HINT4: 空格^key^空格 = ?
-HINT4: 通过HINT3，可以得到key的一部分，然后通过HINT1，可以得到剩下的key
-HINT5: 解密后的文本可能需要微调，你只需要获取密文的大致意思即可
+HINT0: 本题目是一个简单的流密码破解题目，题意在requirement.md中已说明
+HINT1: 假设A，B两明文key加密后密文分别是 EA = A^key, EB = B^key, 那么 EA^EB = A^B. 即：明文异或等于密文异或
+HINT2: 空格^a = A, 空格^A = a;（异或空格后实现大小写字母转换）
+HINT3: (空格^key)^空格 = key (知道明文第i位是空格后，密文第i位^空格 = 密钥)
+HINT4: 解密后的文本可能需要修改一些奇怪（?）的字符获得对应明文，
 */ 
 
 
