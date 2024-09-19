@@ -9,7 +9,7 @@ HINT2: 空格 ASCII = 0x20, A~Z ASCII = 0x41~0x5A, a~z ASCII = 0x61~0x7A
 HINT3: 空格^大写字母 = ?, 空格^小写字母 = ?
 HINT4: 空格^key^空格 = ?
 HINT4: 通过HINT3，可以得到key的一部分，然后通过HINT1，可以得到剩下的key
-HINT5: maybe you need to fix bugs in the plaintxt
+HINT5: 解密后的文本可能需要微调，你只需要获取密文的大致意思即可
 */ 
 
 
